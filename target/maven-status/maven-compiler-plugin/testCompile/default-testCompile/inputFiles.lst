@@ -1,1 +1,4 @@
-/home/maxbelushkin/workspace/revolut/src/test/java/com/revolut/AppTest.java
+/home/maxbelushkin/workspace/revolut/src/test/java/com/revolut/account/dao/AccountDAOTest.java
+/home/maxbelushkin/workspace/revolut/src/test/java/com/revolut/account/AccountsProvider.java
+/home/maxbelushkin/workspace/revolut/src/test/java/com/revolut/account/service/AccountServiceTest.java
+/home/maxbelushkin/workspace/revolut/src/test/java/com/revolut/account/controller/AccountControllerTest.java
