@@ -1,1 +1,10 @@
+/home/maxbelushkin/workspace/revolut/src/main/java/com/revolut/BalanceTransferService.java
+/home/maxbelushkin/workspace/revolut/src/main/java/com/revolut/sparkapp/SparkApp.java
 /home/maxbelushkin/workspace/revolut/src/main/java/com/revolut/App.java
+/home/maxbelushkin/workspace/revolut/src/main/java/com/revolut/controller/TransactionController.java
+/home/maxbelushkin/workspace/revolut/src/main/java/com/revolut/dto/requests/AccountRequestDto.java
+/home/maxbelushkin/workspace/revolut/src/main/java/com/revolut/models/UserModel.java
+/home/maxbelushkin/workspace/revolut/src/main/java/com/revolut/controller/AccountController.java
+/home/maxbelushkin/workspace/revolut/src/main/java/com/revolut/dao/account/AccountDao.java
+/home/maxbelushkin/workspace/revolut/src/main/java/com/revolut/models/AccountModel.java
+/home/maxbelushkin/workspace/revolut/src/main/java/com/revolut/controller/UserController.java
