@@ -1,14 +1,1 @@
-com/revolut/dto/requests/UserRequestDto$1.class
-com/revolut/models/AccountModel$1.class
-com/revolut/dto/requests/TransRequestDto$1.class
-com/revolut/dto/requests/AccountRequestDto$1.class
-com/revolut/models/UserModel$1.class
-com/revolut/dto/responses/ResponseDto$1.class
-com/revolut/dto/responses/StatusType.class
-com/revolut/dto/responses/TransResponseDto$1.class
-com/revolut/dao/account/AccountDaoImpl.class
-com/revolut/dto/requests/WithdrawRequestDto$1.class
-com/revolut/dto/responses/WithdrawResponseDto$1.class
-com/revolut/dto/responses/DepositResponse$1.class
 com/revolut/App.class
-com/revolut/dto/requests/DepositRequest$1.class

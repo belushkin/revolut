@@ -1,12 +1,17 @@
 package com.revolut;
 
-import static spark.Spark.get;
+import com.google.inject.Guice;
+import com.google.inject.Injector;
+import com.revolut.account.controller.AccountController;
+import com.revolut.config.MainModule;
 
 public class App 
 {
     public static void main( String[] args )
     {
-        get("/hello", (req, res)->"Hello, world");
-        // System.out.println( "Hello World!" );
+    Injector injector = Guice.createInjector(new MainModule());
+
+    AccountController accountController = injector.getInstance(AccountController.class);
+    accountController.configureRoutes();
     }
 }
