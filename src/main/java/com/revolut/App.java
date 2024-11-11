@@ -1,13 +1,12 @@
 package com.revolut;
 
-/**
- * Hello world!
- *
- */
+import static spark.Spark.get;
+
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        get("/hello", (req, res)->"Hello, world");
+        // System.out.println( "Hello World!" );
     }
 }
