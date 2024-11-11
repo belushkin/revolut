@@ -8,8 +8,8 @@ import lombok.ToString;
 @ToString
 @Getter
 public class DepositResponse {
-private BigDecimal depositAmount;
-	private BigDecimal currentAmount;
+    private final BigDecimal depositAmount;
+	private final BigDecimal currentAmount;
 
 	private DepositResponse(Builder build) {
 		this.depositAmount = build.depositAmount;

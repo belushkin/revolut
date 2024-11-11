@@ -8,7 +8,7 @@ import lombok.ToString;
 @Getter
 @ToString
 public class WithdrawRequestDto {
-private String accountId;
+private final Integer accountId;
 	private volatile BigDecimal amount;
 	
 	
@@ -22,7 +22,7 @@ private String accountId;
 	}
 
 	public static class Builder {
-		private String accountId;
+		private Integer accountId;
 		private volatile BigDecimal amount;
 
 		private Builder() {
@@ -34,7 +34,7 @@ private String accountId;
 			return this;
 		}
 
-		public Builder withAccountId(String accountId) {
+		public Builder withAccountId(Integer accountId) {
 			this.accountId = accountId;
 			return this;
 		}

@@ -2,20 +2,37 @@ package com.revolut.models;
 
 import java.util.Objects;
 
+import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.table.DatabaseTable;
+
 import lombok.Getter;
 import lombok.ToString;
 
 @Getter
 @ToString
+@DatabaseTable(tableName = "users")
 public class UserModel {
 
-    private String id;
-	private String firstName;
-	private String lastName;
-	private String email;
-	private String CNIC; // national identity number
-	private String address;
-	private String contactNumber;
+	@DatabaseField(generatedId = true)
+    private final String id;
+	
+	@DatabaseField(canBeNull = false)
+	private final String firstName;
+
+	@DatabaseField(canBeNull = false)
+	private final String lastName;
+
+	@DatabaseField(canBeNull = false)
+	private final String email;
+
+	@DatabaseField(canBeNull = false)
+	private final String CNIC; // national identity number
+
+	@DatabaseField(canBeNull = false)
+	private final String address;
+
+	@DatabaseField(canBeNull = false)
+	private final String contactNumber;
 
 	private UserModel(Builder builder) {
 		this.id = builder.id;

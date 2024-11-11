@@ -9,7 +9,7 @@ import lombok.ToString;
 @ToString
 public class UserRequestDto {
 
-    private UserModel user;
+    private final UserModel user;
 
 	/**
 	 * @param builder

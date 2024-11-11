@@ -1,9 +1,9 @@
-package com.revolut.dto.responses;
+package com.revolut.dto.status;
 
 public enum StatusType {
     SUCCESS("Success"), ERROR("Error"), INFORMATIONAL("Information"), REDIRECT("Redirect");
 
-	private String message;
+	private final String message;
 
 	/**
 	 * @param message

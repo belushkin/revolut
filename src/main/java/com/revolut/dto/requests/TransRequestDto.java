@@ -8,8 +8,8 @@ import lombok.ToString;
 @Getter
 @ToString
 public class TransRequestDto {
-    private String fromAccount;
-	private String toAccount;
+    private final Integer fromAccount;
+	private final Integer toAccount;
 	private volatile BigDecimal amount;
 
     private TransRequestDto(Builder builder) {
@@ -22,8 +22,8 @@ public class TransRequestDto {
 		return new Builder();
 	}
 	public static class Builder {
-		private String fromAccount;
-		private String toAccount;
+		private Integer fromAccount;
+		private Integer toAccount;
 		private volatile BigDecimal amount;
 
 		private Builder() {
@@ -34,7 +34,7 @@ public class TransRequestDto {
 		 * @param fromAccount
 		 * @return
 		 */
-		public Builder withFromAccount(String fromAccount) {
+		public Builder withFromAccount(Integer fromAccount) {
 			this.fromAccount = fromAccount;
 			return this;
 		}
@@ -43,7 +43,7 @@ public class TransRequestDto {
 		 * @param toAccount
 		 * @return
 		 */
-		public Builder withToAccount(String toAccount) {
+		public Builder withToAccount(Integer toAccount) {
 			this.toAccount = toAccount;
 			return this;
 		}

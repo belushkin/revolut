@@ -8,6 +8,7 @@ import com.revolut.dto.requests.DepositRequest;
 import com.revolut.dto.requests.UserRequestDto;
 import com.revolut.dto.requests.WithdrawRequestDto;
 import com.revolut.exception.BadRequestParamsException;
+import com.revolut.exception.InvalidRequestException;
 
 public class Helper {
 public static final Gson GSON = new Gson();

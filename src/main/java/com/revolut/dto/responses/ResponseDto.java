@@ -1,18 +1,19 @@
 package com.revolut.dto.responses;
 
 import com.google.gson.JsonElement;
+import com.revolut.dto.status.StatusType;
+import com.revolut.utils.Helper;
 
 import lombok.Getter;
 import lombok.ToString;
-import lombok.experimental.Helper;
 
 @Getter
 @ToString
 public class ResponseDto {
 
-    private StatusType statusType;
-	private JsonElement data;
-	private String message;
+    private final StatusType statusType;
+	private final JsonElement data;
+	private final String message;
 
 	/**
 	 * @param builder

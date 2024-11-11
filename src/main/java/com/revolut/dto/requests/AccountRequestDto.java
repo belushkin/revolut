@@ -9,7 +9,7 @@ import lombok.ToString;
 @ToString
 public class AccountRequestDto {
 
-    private AccountModel account;
+    private final AccountModel account;
 
     /**
 	 * @param builder

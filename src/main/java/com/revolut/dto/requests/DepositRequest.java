@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 public class DepositRequest {
 
-private String accountId;
+	private Integer accountId;
 	private volatile BigDecimal amount;
 
 	private DepositRequest(Builder builder) {
@@ -22,7 +22,7 @@ private String accountId;
 	}
 
 	public static class Builder {
-		private String accountId;
+		private Integer accountId;
 		private volatile BigDecimal amount;
 
 		private Builder() {
@@ -34,7 +34,7 @@ private String accountId;
 			return this;
 		}
 
-		public Builder withAccountId(String accountId) {
+		public Builder withAccountId(Integer accountId) {
 			this.accountId = accountId;
 			return this;
 		}

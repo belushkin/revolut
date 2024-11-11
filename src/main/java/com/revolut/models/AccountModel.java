@@ -4,21 +4,31 @@ import java.math.BigDecimal;
 import java.util.Currency;
 import java.util.Objects;
 
+import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.table.DatabaseTable;
+
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
 @Getter
 @Setter
-@ToString
+@DatabaseTable(tableName = "accounts")
 public class AccountModel {
 
-    private String id;
-	private String accountTitle;
-	private volatile BigDecimal balance;
-	private Currency currency;
-	private String userId;
+    @DatabaseField(generatedId = true)
+    private final Integer id;
 
+    @DatabaseField(canBeNull = false)
+	private final String accountTitle;
+
+    @DatabaseField(canBeNull = false)
+	private final BigDecimal balance;
+
+    @DatabaseField(canBeNull = false)
+	private final Currency currency;
+
+    @DatabaseField(canBeNull = false)
+	private final String userId;
 
     private AccountModel(Builder builder) {
 		this.id = builder.id;
@@ -51,7 +61,7 @@ public class AccountModel {
 	}
 
     public static class Builder {
-		private String id;
+		private Integer id;
 		private String accountTitle;
 		private BigDecimal balance;
 		private Currency currency;
@@ -65,7 +75,7 @@ public class AccountModel {
 		 * @param id
 		 * @return
 		 */
-		public Builder withId(String id) {
+		public Builder withId(Integer id) {
 			this.id = id;
 			return this;
 		}
